@@ -1,0 +1,10 @@
+name: mosdef_gomc
+channels:
+  - conda-forge
+dependencies:
+  - mosdef-gomc
+  - signac
+  - signac-flow
+  - matplotlib
+  - numpy
+  - pandas
