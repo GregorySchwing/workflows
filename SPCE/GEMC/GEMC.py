@@ -58,8 +58,8 @@ PRESSURE_ADJ_FREQ = 1 * 10**3
 OUTPUT_DATA_FREQ = 50 * 10**3
 
 # FOR DEBUGGING
-MC_Steps = 1 * 10**4 # # set value for paper = 50 * 10**3
-EQ_Steps = 1 * 10**3 # # set value for paper = 50 * 10**3
+MC_Steps = 1 * 10**5 # # set value for paper = 50 * 10**3
+EQ_Steps = 1 * 10**4 # # set value for paper = 50 * 10**3
 COORD_BLK_FREQ = 1 * 10**4 # # set value for paper = 50 * 10**3
 OUTPUT_DATA_FREQ = 1 * 10**3
 
@@ -1576,6 +1576,7 @@ def part_5b_analysis_replica_averages(*jobs):
 # ******************************************************
 # ******************************************************
 
+"""
 @Project.pre(
      lambda * jobs: all(
          gomc_sim_completed_properly(job, gomc_production_control_file_name_str)
@@ -1634,7 +1635,7 @@ def part_5c_analysis_critical_and_boiling__points_replicate_data(*jobs):
                                                      f"\n"
 
 
-    write_critial_file_path_and_name = f'analysis/{output_critical_data_replicate_txt_file_name}'
+    write_critial_file_path_and_name = f'../../analysis/{output_critical_data_replicate_txt_file_name}'
     if os.path.isfile(write_critial_file_path_and_name):
         critial_data_replicate_txt_file = open(write_critial_file_path_and_name, "a")
     else:
@@ -1880,7 +1881,7 @@ def part_5c_analysis_critical_and_boiling__points_replicate_data(*jobs):
                                                      f"{output_column_No_T_K_for_Tbp: <30} " \
                                                      f"\n"
 
-    write_boiling_file_path_and_name = f'analysis/{output_boiling_data_replicate_txt_file_name}'
+    write_boiling_file_path_and_name = f'../../analysis/{output_boiling_data_replicate_txt_file_name}'
     if os.path.isfile(write_boiling_file_path_and_name):
         boiling_data_replicate_txt_file = open(write_boiling_file_path_and_name, "a")
     else:
@@ -2053,7 +2054,7 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
                         raise ValueError("ERROR: There is not 1 or any replicate data for the critical point analysis.")
 
                 critial_data_avg_std_txt_file = open(
-                    f'analysis/{output_critical_data_avg_std_of_replicates_txt_file_name}', "w"
+                    f'../../analysis/{output_critical_data_avg_std_of_replicates_txt_file_name}', "w"
                 )
                 critial_data_avg_std_txt_file.write(output_critical_data_avg_std_txt_file_header)
 
@@ -2185,7 +2186,7 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
                         raise ValueError("ERROR: There is not 1 or any replicate data for the boiling point analysis.")
 
                 boiling_data_avg_std_txt_file = open(
-                    f'analysis/{output_boiling_data_avg_std_of_replicates_txt_file_name}', "w"
+                    f'../../analysis/{output_boiling_data_avg_std_of_replicates_txt_file_name}', "w"
                 )
                 boiling_data_avg_std_txt_file.write(output_boiling_data_avg_std_txt_file_header)
 
@@ -2220,7 +2221,9 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
     # ***********************
     # calc the Boiling points (end)
     # ***********************
-# ******************************************************
+"""
+    
+    # ******************************************************
 # ******************************************************
 # data analysis - get the critical and boiling point data avg and std. dev across the replicates (end)
 # ******************************************************
