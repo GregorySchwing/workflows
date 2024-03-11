@@ -1,0 +1,123 @@
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/mdtraj/geometry/order.py:25: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import parse_version
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/pkg_resources/__init__.py:2846: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/mbuild/recipes/__init__.py:13: DeprecationWarning: SelectableGroups dict interface is deprecated. Use select.
+  entry_points = metadata.entry_points()["mbuild.plugins"]
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/mdtraj/core/trajectory.py:439: UserWarning: top= kwargs ignored since this file parser does not support it
+  warnings.warn('top= kwargs ignored since this file parser does not support it')
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/gmso/core/topology.py:818: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  all_scales[index][scaling_interaction_idxes[interaction]] = value
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/gmso/core/topology.py:818: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  all_scales[index][scaling_interaction_idxes[interaction]] = value
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/gmso/core/topology.py:818: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  all_scales[index][scaling_interaction_idxes[interaction]] = value
+/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/gmso/core/topology.py:818: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  all_scales[index][scaling_interaction_idxes[interaction]] = value
+project_directory_path = /home/greg/Desktop/workflows/SPCE/GEMC
+#**********************
+Started: GOMC Charmm Object
+#**********************
+Running: liquid phase box packing
+Completed: liquid phase box packing
+Running: vapor phase box packing
+Completed: vapor phase box packing
+molecule_mol_fraction_list =  [1.0]
+Running: GOMC FF file, and the psf and pdb files
+write_gomcdata: forcefield_selection = ../../SPCE_GMSO.xml, residues = ['WAT']
+FF forcefield_selection = {'WAT': '../../SPCE_GMSO.xml'}
+INFORMATION: The following residues will have these fixed parameters: gomc_fix_bonds = ['WAT']
+******************************
+
+GOMC FF writing each residues FF as a group for structure_box_0
+forcefield_selection = {'WAT': '../../SPCE_GMSO.xml'}
+GOMC FF writing each residues FF as a group for  structure_box_1
+forcefield_selection = {'WAT': '../../SPCE_GMSO.xml'}
+forcefield type from compound = {'WAT': '../../SPCE_GMSO.xml'}
+coulomb14scale from compound = {'WAT': 0.0}
+nonbonded14scale from compound = {'WAT': 0.0}
+self.unique_types = ['WAT_HW' 'WAT_OW']
+self.epsilon_kcal_per_mol_atom_class_dict = {'WAT_OW': 0.15539425908221796, 'WAT_HW': 0.0}
+self.sigma_angstrom_atom_type_dict = {'WAT_OW': 3.165558, 'WAT_HW': 1.0}
+self.mass_atom_type_dict = {'WAT_OW': 15.999, 'WAT_HW': 1.008}
+atom_class_conficts_str = 
+mosdef_atom_name_to_atom_type_dict = {'WAT_HW': 'HW0', 'WAT_OW': 'OW0'}
+all_res_unique_atom_name_dict = {'WAT': {'H2', 'H1', 'O1'}}
+******************************
+
+The charmm force field file writer (the write_inp function) is running
+******************************
+
+The charmm force field file writer (the write_inp function) is running
+******************************
+
+writing the GOMC force field file 
+NBFIX_Mixing not used.
+self.utilized_NB_expression = LJ
+******************************
+
+The psf writer (the write_psf function) is running
+write_psf: forcefield_selection = {'WAT': '../../SPCE_GMSO.xml'}, residues = ['WAT']
+******************************
+
+bead_to_atom_name_dict = {'_CH3': 'C', '_CH2': 'C', '_CH': 'C', '_HC': 'C'}
+bead_to_atom_name_dict = {'_CH3': 'C', '_CH2': 'C', '_CH': 'C', '_HC': 'C'}
+******************************
+
+The charmm pdb writer (the write_pdb function) is running
+write_charmm_pdb: residues == ['WAT']
+fix_residue = None
+fix_residue_in_box = None
+set_residue_pdb_occupancy_to_1 = None
+bead_to_atom_name_dict = {'_CH3': 'C', '_CH2': 'C', '_CH': 'C', '_HC': 'C'}
+INFORMATION: No atoms are fixed in this pdb file for the GOMC simulation engine. 
+******************************
+
+Completed: GOMC FF file, and the psf and pdb files
+#**********************
+Started: equilb GEMC-NVT GOMC control file writing
+#**********************
+INFO: ensemble_type = GEMC_NVT
+INFO: All the ensemble (ensemble_type) input passed the initial error checking
+INFO: All the Temperature  (Temperature) input passed the initial error checking
+INFO: All the required force field, pdb, and psf files for box 0 (.inp, .pdb, and .psf) all passed the intial error checking. Note: the file names and their existance is not confirmed.
+before rcut self.input_variables_dict[key] = 10 Å
+after rcut self.input_variables_dict[key] = 10.0
+INFO: All the input variable passed the initial error checking
+INFO: The sum of the Monte Carlo move ratios = 1.000000000000
+INFO: No extension name was provided for the control file. Therefore, the proper extension, .conf, was added.  The new total control file name = GEMC_equil.conf
+#**********************
+Completed: equilb GEMC-NVT GOMC control file written
+#**********************
+#**********************
+Started: production NPT or GEMC-NVT GOMC control file writing
+#**********************
+INFO: ensemble_type = GEMC_NVT
+INFO: All the ensemble (ensemble_type) input passed the initial error checking
+acutal_file_extension =  .pdb
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .psf
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .coor
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .xsc
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .pdb
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .psf
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .coor
+type(acutal_file_extension) =  <class 'str'>
+acutal_file_extension =  .xsc
+type(acutal_file_extension) =  <class 'str'>
+INFO: All the Temperature  (Temperature) input passed the initial error checking
+INFO: All the required force field, pdb, and psf files for box 0 (.inp, .pdb, and .psf) all passed the intial error checking. Note: the file names and their existance is not confirmed.
+before rcut self.input_variables_dict[key] = 10 Å
+after rcut self.input_variables_dict[key] = 10.0
+INFO: All the input variable passed the initial error checking
+INFO: The sum of the Monte Carlo move ratios = 1.000000000000
+INFO: No extension name was provided for the control file. Therefore, the proper extension, .conf, was added.  The new total control file name = GEMC_prod.conf
+#**********************
+Completed: production NPT or GEMC-NVT GOMC control file writing
+#**********************

@@ -1,0 +1,502 @@
+Info: GOMC Version 2.75
+Info: Start Time: Sat Mar  9 18:12:51 2024
+Info: Host Name: donePHDgoodPHD
+CPU information:
+Info: Total number of CPUs: 16
+Info: Total number of CPUs available: 16
+Info: Model name: Intel(R) Xeon(R) W-10885M CPU @ 2.40GHz
+Info: System name: Linux
+Info: Release: 5.15.0-100-generic
+Info: Version: #110~20.04.1-Ubuntu SMP Tue Feb 13 14:25:03 UTC 2024
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 63924.1MB
+Info: Used Ram: 26100.1MB
+Info: Working in the current directory: /home/greg/Desktop/workflows/SPCE/GEMC/workspace/9397beedea7676bbc34836b5a34ea7cf
+GPU information:
+Info: Device Number: 0
+Info: Device name: Quadro RTX 5000 with Max-Q Design
+Info: Memory Clock Rate (KHz): 6001000
+Info: Memory Bus Width (bits): 256
+Info: Peak Memory Bandwidth (GB/s): 384.064000
+Info: Using Device Number: 0
+Info: GOMC COMPILED TO RUN GIBBS ENSEMBLE.
+Info: Number of threads                  4 
+Info: Compiled with OpenMP Version       4.5
+
+Reading Input File:                      GEMC_prod.conf
+Info: Restart simulation                 Active 
+Info: Expert Mode                        Inactive 
+Info: Integer seed                       Active 
+Info: Constant seed                      Active 
+Info: Parameter file                     CHARMM format 
+Info: Running NVT_GEMC
+Info: Input Temperature                  600.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Impulse Pressure Correction        Inactive 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Ewald Summation                    Active 
+Info: Cache Ewald Fourier                Inactive 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Box  0  CutoffCoulomb              12.0000 A
+Info: Box  1  CutoffCoulomb              10.0000 A
+Info: Pressure calculation frequency     1000 
+Info: Total number of steps              100000 
+Info: Number of equilibration steps      10000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.3400 
+Info: Rotation move frequency            0.3400 
+Info: Molecule swap move frequency       0.2000 
+Info: Regrowth move frequency            0.1000 
+Info: Volume move frequency              0.0100 
+Info: Multi-Particle move frequency      0.0100 
+Info: CBMC First atom trials             12   
+Info: CBMC Secondary atom trials         10   
+Info: CBMC Angle trials                  50   
+Info: CBMC Dihedral trials               50   
+Info: Output name                        SPCE_prod 
+Info: Restart frequency                  10000 
+Info: Checkpoint frequency               10000 
+Info: Printing coordinate                Inactive 
+Info: DCD frequency                      10000 
+Info: Console output frequency           10000 
+Info: Average output frequency           10000 
+Warning: Unknown input HistogramFreq!
+Warning: Unknown input DistName!
+Warning: Unknown input HistName!
+Warning: Unknown input RunNumber!
+Warning: Unknown input RunLetter!
+Warning: Unknown input SampleFreq!
+Default: Intra-Swap move frequency       0.0000 
+Default: Multi-Particle Brownian move frequency 0.0000 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: Targeted-Swap move frequency    0.0000 
+Default: MEMC move frequency             0.0000 
+Default: nonEq Mol-Transfer move frequency 0.0000 
+Default: Targeted-Swap move frequency    0.0000 
+Warning: Cell dimension set, but will be ignored in restart mode.
+Finished Reading Input File:             GEMC_prod.conf
+
+Reading from CHARMM-Style parameter file:  	SPCE_FF.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading NONBONDED parameters.
+Reading from box 0 PDB coordinate file:  	SPCE_equil_BOX_0_restart.pdb
+Finished reading:                       	SPCE_equil_BOX_0_restart.pdb
+Reading from box 1 PDB coordinate file:  	SPCE_equil_BOX_1_restart.pdb
+Finished reading:                       	SPCE_equil_BOX_1_restart.pdb
+Random number seed: 1
+
+Molecules in PSF:
+Molecule Kind: WAT
+Idx	name	type	charge	mass
+0	O1	OW0	-0.8476	15.9990
+1	H1	HW0	0.4238	1.0080
+2	H2	HW0	0.4238	1.0080
+
+Bonds:
+[0 1] [0 2] 
+
+Angles:
+[1 0 2] 
+
+Dihedrals:
+
+Impropers:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+OW0	HW0	                         FIX           1.0000 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+HW0	OW0	HW0	                 FIX         109.4700 
+
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+OW0    OW0                   0.0000      3.1656   12.00 
+OW0    HW0                   0.0000      2.0828   12.00 
+HW0    HW0                   0.0000      1.0000   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+OW0    OW0                  78.1974      3.1656   12.00 
+OW0    HW0                  -0.0000      2.0828   12.00 
+HW0    HW0                   0.0000      1.0000   12.00 
+
+Info: Reading extended system file SPCE_equil_BOX_0_restart.xsc 
+
+Info: Finished reading extended system file SPCE_equil_BOX_0_restart.xsc 
+
+Info: Reading extended system file SPCE_equil_BOX_1_restart.xsc 
+
+Info: Finished reading extended system file SPCE_equil_BOX_1_restart.xsc 
+
+Info: Reading from binary file SPCE_equil_BOX_0_restart.coor
+
+Info: Finished reading from binary file SPCE_equil_BOX_0_restart.coor
+
+Info: Reading from binary file SPCE_equil_BOX_1_restart.coor
+
+Info: Finished reading from binary file SPCE_equil_BOX_1_restart.coor
+
+Info: Box  0:  Periodic Cell Basis 1     38.640   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  38.640   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  38.640 
+
+Info: Box  1:  Periodic Cell Basis 1     35.200   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  35.200   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  35.200 
+
+Minimum coordinates in box 0: x =   -0.413, y =   -0.576, z =   -0.414
+Maximum coordinates in box 0: x =   38.907, y =   39.229, z =   38.788
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =   -0.517, y =   -0.622, z =   -0.743
+Maximum coordinates in box 1: x =   35.746, y =   35.636, z =   35.169
+Wrapping molecules inside the simulation box 1:
+Box: 0, RecipVectors:   3465, kmax: 12
+Box: 1, RecipVectors:   4522, kmax: 13
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:          STEP                TOTAL             INTRA(B)            INTRA(NB)            INTER(LJ)                  LRC          TOTAL_ELECT                 REAL                RECIP                 SELF                 CORR
+
+ENER_0:             0      -2.36396418e+06       0.00000000e+00       0.00000000e+00       3.63750267e+05      -7.31029513e+03      -2.72040415e+06      -2.51708700e+06       8.28016648e+04      -2.29818293e+07       2.26957105e+07
+
+ENER_1:             0      -3.33455935e+05       0.00000000e+00       0.00000000e+00       6.74859760e+04      -6.04361219e+02      -4.00337550e+05      -3.43135862e+05       6.87061995e+04      -6.89454878e+06       6.76864089e+06
+
+STITLE:          STEP               VOLUME             PRESSURE      COMPRESSIBILITY             ENTHALPY             HEAT_VAP             TOTALMOL          TOT_DENSITY
+
+STAT_0:             0       5.76915416e+04       3.89719210e+02       3.39265296e-01      -2.28763778e+01       1.36258271e+01                  800       4.14821504e+02
+
+STAT_1:             0       4.36144584e+04       3.32146567e+02       8.74370954e-01      -9.50057905e+00       1.36258271e+01                  200       1.37177515e+02
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:          STEP               DISTRY            DISACCEPT           DISACCEPT%               DISMAX               ROTATE            ROTACCEPT           ROTACCEPT%               ROTMAX        MULTIPARTICLE             MPACCEPT            MPACCEPT%             REGROWTH         REGROWACCEPT        REGROWACCEPT%             TRANSFER           TRANACCEPT          TRANACCEPT%               VOLUME            VOLACCEPT           VOLACCEPT%               VOLMAX
+
+ETITLE:          STEP                TOTAL             INTRA(B)            INTRA(NB)            INTER(LJ)                  LRC          TOTAL_ELECT                 REAL                RECIP                 SELF                 CORR
+
+STITLE:          STEP               VOLUME             PRESSURE      COMPRESSIBILITY             ENTHALPY             HEAT_VAP             TOTALMOL          TOT_DENSITY
+
+Opening DCD coordinate file: SPCE_prod_BOX_0.dcd 
+Opening DCD coordinate file: SPCE_prod_BOX_1.dcd 
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 1 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 1 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 1 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 1 
+Printed combined psf to file SPCE_prod_merged.psf
+MOVE_0:         10000                 1699                  853       5.02060035e+01       3.69306205e-01                 1701                  839       4.93239271e+01       8.92366565e-01                  120                   53       4.41666667e+01                  515                  182       3.53398058e+01                 1020                   70       6.86274510e+00                  102                   58       5.68627451e+01       1.00358729e+03
+
+ENER_0:         10000      -2.40951338e+06       0.00000000e+00       0.00000000e+00       3.33896921e+05      -7.47850420e+03      -2.73593179e+06      -2.52812856e+06       8.29636281e+04      -2.33552840e+07       2.30645171e+07
+
+STAT_0:         10000       5.82416178e+04       6.76774079e+01       5.85264346e-02      -2.43498600e+01       1.13824748e+01                  813       4.17580812e+02
+
+PRES_0:         10000      -9.06923053e+02      -1.18164938e+03      -1.07113057e+03
+
+MOVE_1:         10000                 1652                  816       4.93946731e+01       5.52014305e-01                 1683                  840       4.99108734e+01       1.34861112e+00                    0                    0       0.00000000e+00                  527                  259       4.91461101e+01                  981                   57       5.81039755e+00                  102                   58       5.68627451e+01       1.00358729e+03
+
+ENER_1:         10000      -3.30715639e+05       0.00000000e+00       0.00000000e+00       5.28079907e+04      -5.35096453e+02      -3.82988533e+05      -3.34804343e+05       6.95396847e+04      -6.44640311e+06       6.32867923e+06
+
+STAT_1:         10000       4.30643822e+04       1.51245425e+02       4.20459653e-01      -1.26068615e+01       1.13824748e+01                  187       1.29899298e+02
+
+PRES_1:         10000      -1.85095728e+02      -2.33463773e+02      -1.96557961e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 10000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 10000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 10000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 10000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 10000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 10000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 10000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 10000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 10000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1014.840, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:         20000                 3381                 1695       5.01330967e+01       3.57559324e-01                 3325                 1642       4.93834586e+01       7.86032698e-01                  225                   94       4.17777778e+01                 1051                  370       3.52045671e+01                 2073                  135       6.51230101e+00                  192                  104       5.41666667e+01       7.08909320e+02
+
+ENER_0:         20000      -2.38186313e+06       0.00000000e+00       0.00000000e+00       3.21249675e+05      -7.27081539e+03      -2.69584199e+06      -2.49190466e+06       8.57560710e+04      -2.32691021e+07       2.29794087e+07
+
+STAT_0:         20000       5.94639837e+04      -5.99899683e+01      -5.31634408e-02      -2.47144874e+01       9.87655079e+00                  810       4.07487637e+02
+
+PRES_0:         20000      -1.07232257e+03      -1.11317702e+03      -1.27843426e+03
+
+MOVE_1:         20000                 3310                 1662       5.02114804e+01       6.05404478e-01                 3465                 1733       5.00144300e+01       1.27461467e+00                    0                    0       0.00000000e+00                 1016                  497       4.89173228e+01                 1962                  125       6.37104995e+00                  192                  104       5.41666667e+01       7.08909320e+02
+
+ENER_1:         20000      -3.26681434e+05       0.00000000e+00       0.00000000e+00       3.17867007e+04      -5.68540855e+02      -3.57899594e+05      -3.07492109e+05       6.92050079e+04      -6.54982134e+06       6.43020885e+06
+
+STAT_1:         20000       4.18420163e+04      -3.13351654e+01      -8.33021983e-02      -1.47112539e+01       9.87655079e+00                  190       1.35838981e+02
+
+PRES_1:         20000      -4.99708289e+02      -4.33746000e+02      -2.77786577e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 20000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 20000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 20000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 20000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 20000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 20000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 20000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 20000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 20000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1108.704, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:         30000                 5047                 2533       5.01882306e+01       3.78250965e-01                 5019                 2505       4.99103407e+01       9.03491051e-01                  332                  134       4.03614458e+01                 1544                  551       3.56865285e+01                 3122                  234       7.49519539e+00                  288                  154       5.34722222e+01       9.00422140e+02
+
+ENER_0:         30000      -2.49287488e+06       0.00000000e+00       0.00000000e+00       3.74552557e+05      -7.99907825e+03      -2.85942836e+06      -2.63988593e+06       7.87358102e+04      -2.39585570e+07       2.36602788e+07
+
+STAT_0:         30000       5.73006089e+04       3.52654210e+02       2.92487780e-01      -2.33932871e+01       1.35652073e+01                  834       4.35401812e+02
+
+PRES_0:         30000      -1.30417131e+03      -6.17742646e+02      -5.21637681e+02
+
+MOVE_1:         30000                 5043                 2553       5.06246282e+01       7.88541025e-01                 5119                 2591       5.06153546e+01       1.77669098e+00                    0                    0       0.00000000e+00                 1526                  766       5.01965924e+01                 2960                  200       6.75675676e+00                  288                  154       5.34722222e+01       9.00422140e+02
+
+ENER_1:         30000      -2.36478376e+05       0.00000000e+00       0.00000000e+00       2.85620362e+04      -4.12645746e+02      -2.64627766e+05      -2.24605801e+05       6.44815812e+04      -5.72247549e+06       5.61797194e+06
+
+STAT_1:         30000       4.40053911e+04       4.71233798e+01       1.50799428e-01      -1.10922312e+01       1.35652073e+01                  166       1.12845858e+02
+
+PRES_1:         30000      -2.56500232e+02      -3.06257016e+02      -2.25578597e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 30000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 30000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 30000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 30000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 30000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 30000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 30000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 30000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 30000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1102.438, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:         40000                 6740                 3382       5.01780415e+01       3.81340753e-01                 6758                 3366       4.98076354e+01       7.93592243e-01                  424                  165       3.89150943e+01                 2041                  728       3.56687898e+01                 4085                  315       7.71113831e+00                  400                  217       5.42500000e+01       1.46957906e+03
+
+ENER_0:         40000      -2.47566223e+06       0.00000000e+00       0.00000000e+00       3.92530615e+05      -8.17809515e+03      -2.86001475e+06      -2.65383865e+06       9.06715505e+04      -2.38436479e+07       2.35468002e+07
+
+STAT_0:         40000       5.55099845e+04       6.12696738e+02       4.94656874e-01      -2.23320750e+01       1.47609838e+01                  830       4.47291253e+02
+
+PRES_0:         40000      -6.20659872e+02      -5.20899111e+02      -6.14237345e+02
+
+MOVE_1:         40000                 6733                 3375       5.01262439e+01       5.77252431e-01                 6843                 3449       5.04018705e+01       1.65696045e+00                    0                    0       0.00000000e+00                 2016                 1038       5.14880952e+01                 3960                  285       7.19696970e+00                  400                  217       5.42500000e+01       1.46957906e+03
+
+ENER_1:         40000      -2.65710288e+05       0.00000000e+00       0.00000000e+00       5.18461057e+04      -4.15850502e+02      -3.17140543e+05      -2.71824722e+05       6.17058828e+04      -5.86036646e+06       5.75334476e+06
+
+STAT_1:         40000       4.57960155e+04       2.42448118e+02       7.88429847e-01      -9.06229619e+00       1.47609838e+01                  170       1.11046442e+02
+
+PRES_1:         40000      -7.63744208e+01      -1.12954121e+02       1.66995623e+00
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 40000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 40000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 40000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 40000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 40000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 40000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 40000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 40000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 40000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1111.029, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:         50000                 8438                 4248       5.03436833e+01       4.26906767e-01                 8437                 4219       5.00059263e+01       8.77188912e-01                  513                  203       3.95711501e+01                 2539                  885       3.48562426e+01                 5121                  394       7.69380980e+00                  494                  266       5.38461538e+01       1.23871861e+03
+
+ENER_0:         50000      -2.44669318e+06       0.00000000e+00       0.00000000e+00       3.72273566e+05      -7.88344409e+03      -2.81108331e+06      -2.60402489e+06       8.72858175e+04      -2.36425569e+07       2.33482126e+07
+
+STAT_0:         50000       5.66175092e+04       3.85522681e+02       3.20159450e-01      -2.31208564e+01       1.23894981e+01                  823       4.34843011e+02
+
+PRES_0:         50000      -2.50779751e+02      -1.11851297e+03      -9.71307785e+02
+
+MOVE_1:         50000                 8447                 4241       5.02071741e+01       6.27242187e-01                 8529                 4287       5.02638058e+01       1.47221802e+00                    0                    0       0.00000000e+00                 2534                 1309       5.16574586e+01                 4948                  371       7.49797898e+00                  494                  266       5.38461538e+01       1.23871861e+03
+
+ENER_1:         50000      -2.92232378e+05       0.00000000e+00       0.00000000e+00       4.47114936e+04      -4.61974417e+02      -3.36481897e+05      -2.93810353e+05       6.87569362e+04      -6.10167567e+06       5.99024719e+06
+
+STAT_1:         50000       4.46884908e+04       1.26463684e+02       3.85437279e-01      -1.18046072e+01       1.23894981e+01                  177       1.18484352e+02
+
+PRES_1:         50000      -1.47573131e+02      -3.01404572e+02      -1.47383840e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 50000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 50000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 50000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 50000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 50000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 50000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 50000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 50000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 50000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1165.559, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:         60000                10163                 5101       5.01918725e+01       3.76007694e-01                10208                 5117       5.01273511e+01       9.62118675e-01                  600                  240       4.00000000e+01                 3039                 1056       3.47482725e+01                 6024                  454       7.53652058e+00                  595                  323       5.42857143e+01       1.18798189e+03
+
+ENER_0:         60000      -2.42890093e+06       0.00000000e+00       0.00000000e+00       3.62393478e+05      -7.62331158e+03      -2.78367109e+06      -2.57726109e+06       8.40006850e+04      -2.33265567e+07       2.30361460e+07
+
+STAT_0:         60000       5.69948308e+04       2.88290136e+02       2.44272563e-01      -2.36520982e+01       1.06598141e+01                  812       4.26190711e+02
+
+PRES_0:         60000      -8.81292483e+02      -1.08615973e+03      -5.97509587e+02
+
+MOVE_1:         60000                10187                 5109       5.01521547e+01       5.79166930e-01                10261                 5154       5.02290225e+01       1.42651861e+00                    0                    0       0.00000000e+00                 3007                 1553       5.16461590e+01                 5916                  442       7.47126437e+00                  595                  323       5.42857143e+01       1.18798189e+03
+
+ENER_1:         60000      -3.38764399e+05       0.00000000e+00       0.00000000e+00       4.85228948e+04      -5.25617202e+02      -3.86761677e+05      -3.35781375e+05       6.73731121e+04      -6.48087585e+06       6.36252244e+06
+
+STAT_1:         60000       4.43111692e+04       7.73814948e+01       2.20169898e-01      -1.38837909e+01       1.06598141e+01                  188       1.26919414e+02
+
+PRES_1:         60000      -3.31063361e+02      -1.00196022e+02      -3.81161043e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 60000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 60000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 60000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 60000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 60000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 60000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 60000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 60000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 60000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1216.673, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:         70000                11909                 5983       5.02393148e+01       4.13570667e-01                11881                 5950       5.00799596e+01       8.22751387e-01                  692                  278       4.01734104e+01                 3497                 1216       3.47726623e+01                 7029                  533       7.58287096e+00                  716                  388       5.41899441e+01       1.15470902e+03
+
+ENER_0:         70000      -2.44080673e+06       0.00000000e+00       0.00000000e+00       3.08234546e+05      -7.62791680e+03      -2.74141336e+06      -2.53354152e+06       8.46855353e+04      -2.34989204e+07       2.32063630e+07
+
+STAT_0:         70000       5.78053109e+04      -1.26746520e+02      -1.08122467e-01      -2.53486727e+01       1.18070852e+01                  818       4.23320189e+02
+
+PRES_0:         70000      -1.29994728e+03      -1.80220672e+03      -6.85557824e+02
+
+MOVE_1:         70000                11900                 5975       5.02100840e+01       6.22747429e-01                11962                 6011       5.02507942e+01       1.50004779e+00                    0                    0       0.00000000e+00                 3499                 1793       5.12432123e+01                 6915                  515       7.44757773e+00                  716                  388       5.41899441e+01       1.15470902e+03
+
+ENER_1:         70000      -3.19980576e+05       0.00000000e+00       0.00000000e+00       5.05300097e+04      -5.01780430e+02      -3.70008806e+05      -3.18861860e+05       6.34292319e+04      -6.27403939e+06       6.15946321e+06
+
+STAT_1:         70000       4.35006891e+04       1.59372849e+02       4.59837677e-01      -1.23239652e+01       1.18070852e+01                  182       1.25158016e+02
+
+PRES_1:         70000      -2.93934264e+02      -4.80477455e+01      -2.10102229e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 70000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 70000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 70000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 70000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 70000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 70000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 70000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 70000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 70000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1146.919, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:         80000                13638                 6826       5.00513272e+01       3.11864934e-01                13561                 6795       5.01069243e+01       8.78952283e-01                  790                  313       3.96202532e+01                 3944                 1370       3.47363083e+01                 7965                  625       7.84682988e+00                  821                  443       5.39585871e+01       7.06797378e+02
+
+ENER_0:         80000      -2.55825384e+06       0.00000000e+00       0.00000000e+00       3.82039149e+05      -8.46544734e+03      -2.93182754e+06      -2.71287499e+06       8.36192495e+04      -2.43032844e+07       2.40007127e+07
+
+STAT_0:         80000       5.57131731e+04       3.60351192e+02       2.86469876e-01      -2.37133343e+01       1.10348213e+01                  846       4.54250995e+02
+
+PRES_0:         80000      -8.77940500e+02      -8.26158657e+02      -8.62725937e+02
+
+MOVE_1:         80000                13634                 6840       5.01686959e+01       5.95819895e-01                13688                 6867       5.01680304e+01       1.33155217e+00                    0                    0       0.00000000e+00                 4053                 2053       5.06538367e+01                 7906                  579       7.32355173e+00                  821                  443       5.39585871e+01       7.06797378e+02
+
+ENER_1:         80000      -2.56732532e+05       0.00000000e+00       0.00000000e+00       2.78567382e+04      -3.42777259e+02      -2.84246493e+05      -2.41208425e+05       5.39110057e+04      -5.30880256e+06       5.21185349e+06
+
+STAT_1:         80000       4.55928269e+04      -1.77900845e+01      -6.35798177e-02      -1.41781719e+01       1.10348213e+01                  154       1.01043323e+02
+
+PRES_1:         80000      -2.33235221e+02      -3.57724312e+02      -2.95606097e+02
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 80000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 80000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 80000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 80000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 80000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 80000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 80000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 80000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 80000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1142.015, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:         90000                15281                 7667       5.01734180e+01       3.48124009e-01                15274                 7657       5.01309415e+01       9.32468761e-01                  892                  351       3.93497758e+01                 4427                 1532       3.46058279e+01                 8972                  704       7.84663397e+00                  928                  501       5.39870690e+01       9.60033369e+02
+
+ENER_0:         90000      -2.67328201e+06       0.00000000e+00       0.00000000e+00       3.90230760e+05      -8.73762013e+03      -3.05477515e+06      -2.82313611e+06       7.70135065e+04      -2.47916483e+07       2.44829958e+07
+
+STAT_0:         90000       5.61688474e+04       1.86971505e+02       1.46901289e-01      -2.50225470e+01       1.39019378e+01                  863       4.59619771e+02
+
+PRES_0:         90000      -1.25921622e+03      -8.19366567e+02      -1.04999076e+03
+
+MOVE_1:         90000                15376                 7714       5.01690947e+01       5.74006365e-01                15387                 7720       5.01722233e+01       1.33046514e+00                    0                    0       0.00000000e+00                 4585                 2311       5.04034896e+01                 8878                  641       7.22009462e+00                  928                  501       5.39870690e+01       9.60033369e+02
+
+ENER_1:         90000      -2.41749133e+05       0.00000000e+00       0.00000000e+00       4.38415528e+04      -2.74014823e+02      -2.85316671e+05      -2.46765799e+05       4.76960314e+04      -4.72276591e+06       4.63651901e+06
+
+STAT_1:         90000       4.51371526e+04       1.77004872e+02       7.03986417e-01      -1.11596739e+01       1.39019378e+01                  137       9.07966505e+01
+
+PRES_1:         90000      -1.00105024e+02      -1.72922220e+02       5.47724103e+01
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 90000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 90000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 90000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 90000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 90000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 90000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 90000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 90000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 90000
+Checkpoint saved to SPCE_prod_restart.chk
+Steps/sec: 1092.668, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:        100000                16967                 8525       5.02445924e+01       3.94755037e-01                17006                 8525       5.01293661e+01       9.01582548e-01                  997                  389       3.90170512e+01                 4929                 1703       3.45506188e+01                 9958                  783       7.86302470e+00                 1046                  569       5.43977055e+01       1.06152600e+03
+
+ENER_0:        100000      -2.64770489e+06       0.00000000e+00       0.00000000e+00       3.93487285e+05      -8.70171426e+03      -3.03249046e+06      -2.80342703e+06       8.06625397e+04      -2.48778302e+07       2.45681042e+07
+
+STAT_0:        100000       5.67934232e+04       2.33099067e+02       1.84538147e-01      -2.45000012e+01       1.28674281e+01                  866       4.56145363e+02
+
+PRES_0:        100000      -7.52868289e+02      -1.02778667e+03      -1.18261236e+03
+
+MOVE_1:        100000                17078                 8565       5.01522427e+01       5.33331170e-01                17034                 8564       5.02759188e+01       1.71679912e+00                    0                    0       0.00000000e+00                 5097                 2570       5.04218168e+01                 9888                  717       7.25121359e+00                 1046                  569       5.43977055e+01       1.06152600e+03
+
+ENER_1:        100000      -2.43025701e+05       0.00000000e+00       0.00000000e+00       4.30565221e+04      -2.65823849e+02      -2.85816399e+05      -2.45862300e+05       4.44041850e+04      -4.61934768e+06       4.53498940e+06
+
+STAT_1:        100000       4.45125768e+04       1.57341319e+02       6.30937281e-01      -1.19317707e+01       1.28674281e+01                  134       9.00545129e+01
+
+PRES_1:        100000      -3.96984973e+01      -1.61856605e+02      -6.96069022e+01
+
+Writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 100000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_0.dcd at step 100000 
+Writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 100000 
+Finished writing DCD coordinate to file SPCE_prod_BOX_1.dcd at step 100000 
+Writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 100000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_0_restart.coor at step 100000 
+Writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 100000 
+Finished writing binary restart coordinate to file SPCE_prod_BOX_1_restart.coor at step 100000 
+Writing checkpoint to file SPCE_prod_restart.chk at step 100000
+Checkpoint saved to SPCE_prod_restart.chk
+Simulation Time (total): 8.98261082e+01 sec.
+
+Move Type                Mol. Kind      BOX_0      BOX_1      
+% Accepted Displacement        WAT     50.24459   50.15224 
+% Accepted Rotation            WAT     50.12937   50.27592 
+% Accepted MultiParticle               39.01705    0.00000 
+% Accepted Regrowth            WAT     34.55062   50.42182 
+% Accepted Mol-Transfer        WAT      7.86302    7.25121 
+% Accepted Volume-Transfer             54.39771   54.39771 
+
+Displacement:                            8.2507    sec.
+Rotation:                                8.2797    sec.
+MultiParticle:                          29.5556    sec.
+Brownian-like MultiParticle:             0.0000    sec.
+Intra Molecule Transfer:                 0.0000    sec.
+Regrowth:                                7.5931    sec.
+Intra Molecule Exchange:                 0.0000    sec.
+Crankshaft:                              0.0000    sec.
+Intra Targeted Transfer:                 0.0000    sec.
+Molecule Exchange:                       0.0000    sec.
+Molecule Transfer:                      24.0781    sec.
+Nonequilibrium Molecule Transfer:        0.0000    sec.
+Targeted Transfer:                       0.0000    sec.
+Volume Transfer:                        10.1702    sec.
+
+Info: GOMC Version 2.75
+Info: Completed at: Sat Mar  9 18:14:21 2024
+Info: On hostname: donePHDgoodPHD
