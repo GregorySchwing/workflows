@@ -20,7 +20,7 @@ echo  "Time is" date
 conda activate mosdef_gomc 
 
 module load intel/2020
-
+module load cmake
 {% if gpus %}
 module load cuda/10.0
 nvidia-smi
