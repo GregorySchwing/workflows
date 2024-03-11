@@ -58,10 +58,10 @@ PRESSURE_ADJ_FREQ = 1 * 10**3
 OUTPUT_DATA_FREQ = 50 * 10**3
 
 # FOR DEBUGGING
-MC_Steps = 1 * 10**5 # # set value for paper = 50 * 10**3
-EQ_Steps = 1 * 10**4 # # set value for paper = 50 * 10**3
-COORD_BLK_FREQ = 1 * 10**4 # # set value for paper = 50 * 10**3
-OUTPUT_DATA_FREQ = 1 * 10**3
+#MC_Steps = 1 * 10**5 # # set value for paper = 50 * 10**3
+#EQ_Steps = 1 * 10**4 # # set value for paper = 50 * 10**3
+#COORD_BLK_FREQ = 1 * 10**4 # # set value for paper = 50 * 10**3
+#OUTPUT_DATA_FREQ = 1 * 10**3
 
 # number of simulation steps
 gomc_steps_equilibration = MC_Steps #  set value for paper = 60 * 10**6
@@ -218,7 +218,7 @@ def initial_parameters(job):
 
     # gomc core and CPU or GPU
     job.doc.gomc_ncpu = 4  # 4 is optimal for water
-    job.doc.gomc_ngpu = 1
+    job.doc.gomc_ngpu = 0
 
     # get the gomc binary paths
     if job.doc.gomc_ngpu == 0:
