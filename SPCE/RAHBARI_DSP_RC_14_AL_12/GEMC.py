@@ -133,8 +133,8 @@ output_boiling_data_avg_std_of_replicates_txt_file_name = "boiling_point_avg_ove
 
 
 walltime_mosdef_hr = 24
-walltime_gomc_equilbrium_hr = 168
-walltime_gomc_production_hr = 168
+walltime_gomc_equilbrium_hr = 336
+walltime_gomc_production_hr = 336
 walltime_gomc_analysis_hr = 4
 memory_needed = 1
 
