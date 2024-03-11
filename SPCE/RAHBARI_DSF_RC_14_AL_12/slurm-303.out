@@ -1,8 +1,0 @@
-/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/mdtraj/geometry/order.py:25: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
-  from pkg_resources import parse_version
-/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/pkg_resources/__init__.py:2846: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
-Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
-  declare_namespace(pkg)
-/home/greg/conda/envs/mosdef_gomc/lib/python3.10/site-packages/mbuild/recipes/__init__.py:13: DeprecationWarning: SelectableGroups dict interface is deprecated. Use select.
-  entry_points = metadata.entry_points()["mbuild.plugins"]
-project_directory_path = /home/greg/Desktop/workflows/SPCE/GEMC

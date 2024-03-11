@@ -1,2 +1,0 @@
-temp_K                         P_bar                          No_mol                         Rho_kg_per_m_cubed             V_ang_cubed                    L_m_if_cubed                   Hv_kJ_per_mol                  Z                               
-300.0                          68.54785178                    955.23904                      938.3581098999999              30456.33475                    31.229081595242                44.71459903                    0.051615580540000004            
