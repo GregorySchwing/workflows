@@ -5,6 +5,5 @@ dependencies:
   - mosdef-gomc
   - signac
   - signac-flow
-  - matplotlib
   - numpy
   - pandas
