@@ -18,7 +18,7 @@ echo  "Running on host" hostname
 echo  "Time is" date
 conda activate mosdef_gomc 
 
-module load python/3.8
+#module load python/3.8f_gomc
 
 {% if gpus %}
 module load cuda/10.0
