@@ -13,7 +13,7 @@ project=signac.init_project()
 #project=signac.get_project()
 #note, 615 is near Tc, boxes change identity
 production_temperatures = [300, 350, 400, 450, 500, 550, 575, 600 ] * u.K
-#production_temperatures = [300, 600] * u.K
+##production_temperatures = [300, 600] * u.K
 
 replicas = [0]
 #replicas = [0, 1]
