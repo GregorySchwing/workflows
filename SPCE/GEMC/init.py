@@ -15,7 +15,7 @@ project=signac.init_project()
 production_temperatures = [300, 350, 400, 450, 500, 550, 575, 600 ] * u.K
 #production_temperatures = [300, 600] * u.K
 
-replicas = [0, 1, 2, 3, 4]
+replicas = [0]
 #replicas = [0, 1]
 
 # *******************************************

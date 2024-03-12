@@ -7,6 +7,7 @@
 {% if gpus %}
 #SBATCH -q gpu
 #SBATCH --gres gpu:{{ gpus }}
+#SBATCH --constraint=intel
 {%- else %}
 #SBATCH -q primary
 #SBATCH --constraint=intel
