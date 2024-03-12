@@ -23,7 +23,7 @@ conda activate mosdef_gomc
 module load intel/2020
 module load cmake
 {% if gpus %}
-module load cuda/10.0
+module load cuda/11.2
 nvidia-smi
 {%- endif %}
 
