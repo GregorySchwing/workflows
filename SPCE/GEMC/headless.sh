@@ -24,5 +24,5 @@
 source "${HOME}/mambaforge/etc/profile.d/mamba.sh"
 source activate mosdef_gomc
 mamba activate mosdef_gomc
-python project.py submit
+python GEMC.py submit
 echo $HOSTNAME
