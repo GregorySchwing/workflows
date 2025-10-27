@@ -693,30 +693,30 @@ def build_psf_pdb_ff_gomc_conf(job):
     # common variables (start)
     # ******************************************************
     # variables from signac workspace
-    box_0_temp_to_rcutcoulomb_dict = {300:12,
-                                     350: 12,
-                                     400: 12,
-                                     450: 12,
-                                     500: 12,
-                                     550: 12,
-                                     575: 12,
-                                     600: 12,
-                                     615: 10,
-                                     625: 10,
-                                     }
-    
-    box_1_temp_to_rcutcoulomb_dict = {300:100,
-                                     350: 50,
-                                     400: 30,
-                                     450: 20,
-                                     500: 20,
+    box_0_temp_to_rcutcoulomb_dict = {300:14,
+                                     350: 14,
+                                     400: 14,
+                                     450: 14,
+                                     500: 14,
                                      550: 14,
-                                     575: 12,
-                                     600: 10,
-                                     615: 10,
-                                     625: 10,
+                                     575: 14,
+                                     600: 14,
+                                     615: 14,
+                                     625: 14,
                                      }
     
+    box_1_temp_to_rcutcoulomb_dict = {300:14,
+                                     350: 14,
+                                     400: 14,
+                                     450: 14,
+                                     500: 14,
+                                     550: 14,
+                                     575: 14,
+                                     600: 14,
+                                     615: 14,
+                                     625: 14,
+                                     }
+
     production_temperature_K = job.sp.production_temperature_K * u.K
     seed_no = job.doc.replica_number_int
 
