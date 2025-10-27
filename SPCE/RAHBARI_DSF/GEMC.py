@@ -203,7 +203,7 @@ def initial_parameters(job):
 
     # gomc core and CPU or GPU
     job.doc.gomc_ncpu = 4  # 4 is optimal for water
-    job.doc.gomc_ngpu = 1
+    job.doc.gomc_ngpu = 0
 
     # get the gomc binary paths
     if job.doc.gomc_ngpu == 0:
