@@ -27,16 +27,13 @@ class Project(FlowProject):
 
 class Grid(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
     """Subclass of DefaultSlurmEnvironment for WSU's Grid cluster."""
+    
+    #uncomment for Grid
+    #hostname_pattern = r".*\.grid\.wayne\.edu"
+    #template = "grid.sh"
+    template = "local.sh"
 
-    hostname_pattern = r".*\.grid\.wayne\.edu"
-    template = "grid.sh"
 
-
-class Potoff(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
-    """Subclass of DefaultSlurmEnvironment for WSU's Grid cluster."""
-
-    hostname_pattern = r".*reslab32ai8111"
-    template = "../../template/potoff.sh"
 
 
 # ******************************************************
@@ -48,36 +45,24 @@ class Potoff(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
 
 # Enter the GOMC binary path here (MANDATORY INFORMAION)
 #gomc_binary_path = "/home6/ai8111/bin"
-gomc_binary_path = "~/GOMC/bin"
+gomc_binary_path = "~/bin"
 
-MC_Steps = 1 * 10**8 # # set value for paper = 50 * 10**3
-EQ_Steps = 1 * 10**8 # # set value for paper = 50 * 10**3
-COORD_BLK_FREQ = 1 * 10**7 # # set value for paper = 50 * 10**3
-CONSOLE_FREQ = 1 * 10**4
-PRESSURE_ADJ_FREQ = 1 * 10**3
-OUTPUT_DATA_FREQ = 50 * 10**3
-
-# FOR DEBUGGING
-#MC_Steps = 1 * 10**5 # # set value for paper = 50 * 10**3
-#EQ_Steps = 1 * 10**4 # # set value for paper = 50 * 10**3
-#COORD_BLK_FREQ = 1 * 10**4 # # set value for paper = 50 * 10**3
-#OUTPUT_DATA_FREQ = 1 * 10**3
 
 # number of simulation steps
-gomc_steps_equilibration = MC_Steps #  set value for paper = 60 * 10**6
-gomc_steps_production = MC_Steps # set value for paper = 60 * 10**6
-console_output_freq = CONSOLE_FREQ # Monte Carlo Steps between console output
-pressure_calc_freq = PRESSURE_ADJ_FREQ # Monte Carlo Steps for pressure calculation
-block_ave_output_freq = COORD_BLK_FREQ # Monte Carlo Steps between console output
-coordinate_output_freq = COORD_BLK_FREQ # # set value for paper = 50 * 10**3
-EqSteps = EQ_Steps # MCS for equilibration
-AdjSteps = PRESSURE_ADJ_FREQ #MCS for adjusting max displacement, rotation, volume, etc.
+gomc_steps_equilibration = 100000000 #  set value for paper = 60 * 10**6
+gomc_steps_production = 100000000 # set value for paper = 60 * 10**6
+console_output_freq = 10000 # Monte Carlo Steps between console output
+pressure_calc_freq = 1000 # Monte Carlo Steps for pressure calculation
+block_ave_output_freq = 10000000 # Monte Carlo Steps between console output
+coordinate_output_freq = 10000000 # # set value for paper = 50 * 10**3
+EqSteps = 100000 # MCS for equilibration
+AdjSteps = 1000 #MCS for adjusting max displacement, rotation, volume, etc.
 
 # number of simulation steps
 #gomc_steps_equilb_design_ensemble = 60 * 10**6 #  set value for paper = 60 * 10**6
 #gomc_steps_production = 60 * 10**6 # set value for paper = 60 * 10**6
 
-gomc_output_data_every_X_steps = OUTPUT_DATA_FREQ # # set value for paper = 50 * 10**3
+gomc_output_data_every_X_steps = 50 * 10**3 # # set value for paper = 50 * 10**3
 
 # force field (FF) file for all simulations in that job
 # Note: do not add extensions
@@ -1576,7 +1561,6 @@ def part_5b_analysis_replica_averages(*jobs):
 # ******************************************************
 # ******************************************************
 
-"""
 @Project.pre(
      lambda * jobs: all(
          gomc_sim_completed_properly(job, gomc_production_control_file_name_str)
@@ -1635,7 +1619,7 @@ def part_5c_analysis_critical_and_boiling__points_replicate_data(*jobs):
                                                      f"\n"
 
 
-    write_critial_file_path_and_name = f'../../analysis/{output_critical_data_replicate_txt_file_name}'
+    write_critial_file_path_and_name = f'analysis/{output_critical_data_replicate_txt_file_name}'
     if os.path.isfile(write_critial_file_path_and_name):
         critial_data_replicate_txt_file = open(write_critial_file_path_and_name, "a")
     else:
@@ -1881,7 +1865,7 @@ def part_5c_analysis_critical_and_boiling__points_replicate_data(*jobs):
                                                      f"{output_column_No_T_K_for_Tbp: <30} " \
                                                      f"\n"
 
-    write_boiling_file_path_and_name = f'../../analysis/{output_boiling_data_replicate_txt_file_name}'
+    write_boiling_file_path_and_name = f'analysis/{output_boiling_data_replicate_txt_file_name}'
     if os.path.isfile(write_boiling_file_path_and_name):
         boiling_data_replicate_txt_file = open(write_boiling_file_path_and_name, "a")
     else:
@@ -2054,7 +2038,7 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
                         raise ValueError("ERROR: There is not 1 or any replicate data for the critical point analysis.")
 
                 critial_data_avg_std_txt_file = open(
-                    f'../../analysis/{output_critical_data_avg_std_of_replicates_txt_file_name}', "w"
+                    f'analysis/{output_critical_data_avg_std_of_replicates_txt_file_name}', "w"
                 )
                 critial_data_avg_std_txt_file.write(output_critical_data_avg_std_txt_file_header)
 
@@ -2186,7 +2170,7 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
                         raise ValueError("ERROR: There is not 1 or any replicate data for the boiling point analysis.")
 
                 boiling_data_avg_std_txt_file = open(
-                    f'../../analysis/{output_boiling_data_avg_std_of_replicates_txt_file_name}', "w"
+                    f'analysis/{output_boiling_data_avg_std_of_replicates_txt_file_name}', "w"
                 )
                 boiling_data_avg_std_txt_file.write(output_boiling_data_avg_std_txt_file_header)
 
@@ -2221,9 +2205,7 @@ def part_5d_analysis_critical_and_boiling_points_avg_std_data(*jobs):
     # ***********************
     # calc the Boiling points (end)
     # ***********************
-"""
-    
-    # ******************************************************
+# ******************************************************
 # ******************************************************
 # data analysis - get the critical and boiling point data avg and std. dev across the replicates (end)
 # ******************************************************
