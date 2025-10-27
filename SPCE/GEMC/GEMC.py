@@ -51,7 +51,7 @@ class Potoff(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
 gomc_binary_path = "~/GOMC/bin"
 
 MC_Steps = 1 * 10**8 # # set value for paper = 50 * 10**3
-EQ_Steps = 1 * 10**5 # # set value for paper = 50 * 10**3
+EQ_Steps = 1 * 10**8 # # set value for paper = 50 * 10**3
 COORD_BLK_FREQ = 1 * 10**7 # # set value for paper = 50 * 10**3
 CONSOLE_FREQ = 1 * 10**4
 PRESSURE_ADJ_FREQ = 1 * 10**3
@@ -72,12 +72,12 @@ block_ave_output_freq = COORD_BLK_FREQ # Monte Carlo Steps between console outpu
 coordinate_output_freq = COORD_BLK_FREQ # # set value for paper = 50 * 10**3
 EqSteps = EQ_Steps # MCS for equilibration
 AdjSteps = PRESSURE_ADJ_FREQ #MCS for adjusting max displacement, rotation, volume, etc.
-gomc_output_data_every_X_steps = OUTPUT_DATA_FREQ # # set value for paper = 50 * 10**3
 
 # number of simulation steps
 #gomc_steps_equilb_design_ensemble = 60 * 10**6 #  set value for paper = 60 * 10**6
 #gomc_steps_production = 60 * 10**6 # set value for paper = 60 * 10**6
 
+gomc_output_data_every_X_steps = OUTPUT_DATA_FREQ # # set value for paper = 50 * 10**3
 
 # force field (FF) file for all simulations in that job
 # Note: do not add extensions
@@ -217,8 +217,8 @@ def initial_parameters(job):
     )
 
     # gomc core and CPU or GPU
-    job.doc.gomc_ncpu = 8  # 4 is optimal for water
-    job.doc.gomc_ngpu = 0
+    job.doc.gomc_ncpu = 4  # 4 is optimal for water
+    job.doc.gomc_ngpu = 1
 
     # get the gomc binary paths
     if job.doc.gomc_ngpu == 0:
