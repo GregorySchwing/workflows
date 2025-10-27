@@ -29,9 +29,9 @@ class Grid(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
     """Subclass of DefaultSlurmEnvironment for WSU's Grid cluster."""
     
     #uncomment for Grid
-    #hostname_pattern = r".*\.grid\.wayne\.edu"
-    #template = "grid.sh"
-    template = "local.sh"
+    hostname_pattern = r".*\.grid\.wayne\.edu"
+    template = "grid.sh"
+    #template = "local.sh"
 
 
 
@@ -45,7 +45,7 @@ class Grid(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
 
 # Enter the GOMC binary path here (MANDATORY INFORMAION)
 #gomc_binary_path = "/home6/ai8111/bin"
-gomc_binary_path = "~/bin"
+gomc_binary_path = "~/GOMC/bin"
 
 
 # number of simulation steps
