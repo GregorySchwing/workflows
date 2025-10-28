@@ -33,7 +33,11 @@ class Grid(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
     template = "grid.sh"
     #template = "local.sh"
 
+class Potoff(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
+    """Subclass of DefaultSlurmEnvironment for WSU's Grid cluster."""
 
+    hostname_pattern = r".*reslab32ai8111"
+    template = "../../template/potoff.sh"
 
 
 # ******************************************************
