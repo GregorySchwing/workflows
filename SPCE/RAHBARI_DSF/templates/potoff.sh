@@ -8,10 +8,12 @@
 {% if gpus %}
 #SBATCH -N 1
 #SBATCH --mail-type=ALL
-#SBATCH --exclude=ressrv7ai8111,ressrv8ai8111,ressrv13ai8111,ressrv14ai8111,ressrv15ai8111,res-lab43-ai8111,reslab44ai8111
+#SBATCH --exclude=ressrv8ai8111,ressrv13ai8111,ressrv14ai8111,res-lab43-ai8111,reslab44ai8111
+#SBATCH --partition=GOMC2
 {%- else %}
 #SBATCH -N 1
 #SBATCH --mail-type=ALL
+#SBATCH --partition=GOMC2
 {%- endif %}
 
 
