@@ -36,9 +36,14 @@ class Grid(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
 class Potoff(DefaultSlurmEnvironment):  # Grid(StandardEnvironment):
     """Subclass of DefaultSlurmEnvironment for WSU's Grid cluster."""
 
-    hostname_pattern = r".*reslab32ai8111"
+    #hostname_pattern = r".*reslab32ai8111"
+    hostname_pattern = "ai8111"
     template = "../../template/potoff.sh"
-
+    partition = "GOMC2"
+    
+    @classmethod
+    def gpu_capable(cls):
+        return True
 
 # ******************************************************
 # users typical variables, but not all (start)
